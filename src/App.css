@@ -1,38 +1,131 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@500&family=Oswald:wght@500&family=Roboto:ital@0;1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.digital-main{
+    height: 100vh;
+    width: 100vw;
+    background-color: #040720;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock-container{
+    height: 45%;
+    width: 30%;
+    background-color:#000000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.clock-container{
+    border-bottom: 2px red solid;
+    border-left: 2px red solid;
+    border-top: 2px orange solid;
+    border-right: 2px orange solid;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.time-display{
+    font-size: 60px;
+    border-bottom: 1px yellowgreen solid;
+}
+.day-display{
+    font-size: 45px;
+    border-bottom: 1px yellowgreen solid;
+}
+.date-display{
+    font-size: 20px;
+    border-bottom: 1px yellowgreen solid;
 }
 
-.App-link {
-  color: #61dafb;
+
+@media(min-width:1200px){
+    .clock-container{
+        height: 45%;
+          width: 30%;
+    }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media(max-width:1200px){
+    .clock-container{
+        height: 45%;
+          width: 40%;
+    }
 }
+
+@media(max-width:1000px){
+    .clock-container{
+        height: 45%;
+          width: 40%;
+    }
+    .time-display{
+        font-size: 45px;
+    }
+}
+@media(max-width:760px){
+    .clock-container{
+        height: 45%;
+          width: 55%;
+    }
+    
+}
+
+
+
+@media(max-width:560px){
+    .clock-container{
+        height: 45%;
+          width: 70%;
+    }
+    .time-display{
+        font-size: 50px;
+    }
+    .day-display{
+        font-size: 35px;
+    }
+    .date-display{
+        font-size: 15px;
+    }
+}
+
+@media(max-width:400px){
+    .clock-container{
+        height: 30%;
+          width: 70%;
+    }
+    .time-display{
+        font-size: 40px;
+    }
+    .day-display{
+        font-size: 25px;
+    }
+    .date-display{
+        font-size: 25px;
+    }
+}
+
+@media(max-width:315px){
+    .clock-container{
+        height: 30%;
+          width: 70%;
+    }
+    .time-display{
+        font-size: 30px;
+    }
+    .day-display{
+        font-size: 20px;
+    }
+    .date-display{
+        font-size: 20px;
+    }
+}
+
